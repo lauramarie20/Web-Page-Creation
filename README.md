@@ -1,15 +1,13 @@
 # Web-Page-Creation
 MCC Files I Created
 
-├── default.htm             ← Week 1
-├── assignment2.css         ← Week 2 (links to default.htm)
-├── allaboutme.html         ← Week 3
-├── assignment3.css         ← Week 3 (links to allaboutme.html)
-├── prime_home.html         ← Week 4
-└── prime.css               ← Week 4 (links to TBD.html)
-└── TBD.css                 ← Week 5 (links to TBD.html) 
-└── TBD.css                 ← Week 5 (links to TBD.html)
-└── TBD.css                 ← Week 6 (links to TBD.html)
-└── TBD.css                 ← Week 6 (links to TBD.html)
-└── TBD.css                 ← Week 7 (links to TBD.html)
-└── TBD.css                 ← Week 7 (links to TBD.html)
+    Week1 --> default.htm
+    Week2 --> assignment2.css (links with default.htm)
+    default.htm --- assignment2.css
+    Week3 --> allaboutme.html (links with assignment3.css)
+    Week3 --> assignment3.css
+    allaboutme.html --- assignment3.css
+    Week4 --> prime_home.html (links with prime.css)
+    Week4 --> prime.css
+    prime_home.html --- prime.css
+    
