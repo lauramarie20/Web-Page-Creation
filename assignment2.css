@@ -1,0 +1,46 @@
+/* Laura Hess
+   assignment2.css
+   INFO_1311_WW
+   Ingraham-Beck
+   3/14/2026 */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    margin: 0px;
+}
+
+#wrapper {
+    width: 900px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: darkslategray;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+    color: white;
+    margin-top: -20px;
+    margin-left: 30px;
+}
+
+h3 {
+    color: #0F4C81; 
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #f0f4f8;
+  text-align: right;
+  font-size: .8em;
+  font-style: italic;
+}
