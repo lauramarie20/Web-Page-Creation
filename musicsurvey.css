@@ -1,0 +1,52 @@
+/* Assignment Requirement: body */
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Assignment Requirement: h1 */
+h1 { 
+    color: #333; 
+    text-align: center;
+}
+
+/* Assignment Requirement: fieldset */
+fieldset { 
+    margin-bottom: 20px; 
+    padding: 15px; 
+    border: 1px solid #ccc;
+    background-color: #0e0ec6;
+}
+
+/* Assignment Requirement: legend */
+legend { 
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* The 'Resolution Fix' */
+#wrapper {
+    width: 90%;          /* It takes up 90% of the screen */
+    max-width: 800px;    /* Will not get wider than 800px on a big monitor */
+    margin: 0 auto;      /* Keeps it centered */
+}
+
+/* Make inputs look decent without being forced */
+input[type="text"], 
+input[type="email"], 
+select, 
+textarea {
+    width: 100%;         /* They stretch to fit the wrapper */
+    max-width: 400px;    /* Prevents them from being giant on desktop */
+    display: block;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+/* Keep the tiny buttons inline */
+input[type="checkbox"], 
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
