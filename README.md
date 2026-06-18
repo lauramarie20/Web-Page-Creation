@@ -16,4 +16,3 @@ Week7 -- music_survye.html (links with musicsurvey.css)
 Week8 --> assign8_html (links with assign8_ptr.html and assignment8.css)
  * Included music and video aspects
 Week9 --> Final Project! (index.html, contact.html, history.html and specials.html)
-
