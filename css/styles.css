@@ -1,0 +1,173 @@
+/* ===== BASE STYLES (mobile first) ===== */
+
+body {
+    background-color: tan;
+    font-family:'Times New Roman', Times, serif;
+    color: #3E2723;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;  /* Makes inside area white*/
+    
+    border: 1px solid #D2B48C;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('../images/logo.png');  /* Logo was created from https://www.onlinelogomaker.com/logomaker/ */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #ffffff;
+    height: 200px; /* Increase this number until the Nav moves down */
+    margin-bottom: 10px; /* Adds space between header and nav */
+}
+
+h1 {
+    /* Keeps h1 for SEO but hides it since logo has name*/
+    text-indent: -9999px; 
+    text-align: center;
+    color: #3E2723; 
+}
+
+h2 {
+    text-align: center;
+    color: black; 
+}
+
+/* Add it here */
+main p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #3E2723;
+    padding: 0px 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.image-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.inline-photo {
+    width: 80%;       /* Large on mobile */
+    max-width: 500px; /* Limits size on desktop so it doesn't get fuzzy */
+    height: auto;
+    margin: auto; 
+    border: 5px solid #F5F5DC; /* Matching my cafe theme */
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+nav ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: #8B0000; 
+    font-weight: bold;
+    text-decoration: none; /* Removes the line for a cleaner look */
+    text-transform: uppercase; /* Makes it look like a formal menu */
+    letter-spacing: 1px;
+}
+
+a:hover {
+    color: #000000;
+}
+
+table {
+    width: 80%;
+    margin: 30px auto; 
+    border-collapse: collapse; 
+    background-color: #ffffff;
+    border: 2px solid #DCDCDC; 
+}
+
+tr:nth-child(even) {
+    background-color: #FAF9F6; 
+}
+
+/* This targets the headers and the cells */
+th, td {
+    padding: 15px;
+    text-align: center; 
+    border-bottom: 2px solid #8B0000;
+    color: #3E2723;                      /* Dark brown */
+    font-weight: bold;
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #D2B48C;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #4D4037;
+}
+
+/* ===== This is for the large (min-width: 800px) ===== */
+
+    @media (min-width: 800px) {
+
+            #wrapper {
+                /* width is 80% and centered */
+                width: 80%;
+                margin: auto; 
+                background-color: #ffffff;
+            }
+
+            nav ul {
+                /* REQUIRED: horizontal layout for large screens */
+                display: flex;
+                justify-content: center;
+            }
+
+            nav ul li {
+                /* Adjust padding for side-by-side links */
+                padding: 0 20px;
+            }
+
+            .image-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between; /* This puts space between my 3 photos */
+                gap: 15px; /* Added a gap so photos don't touch */
+                padding: 20px;
+            }
+
+            .image-row img {
+                width: 32%; /* This ensures 3 images fit */
+                height: 250px; /* This keeps them all the exact same height */
+                object-fit: cover; /* This prevents the food from looking "squished" */
+                border-radius: 4px; 
+            }
+
+            main p {
+                max-width: 1500px; /* Prevents text from stretching too wide */
+                margin: 0 auto;  /* Centers the text block */
+                text-align: center;
+
+            }
+}
